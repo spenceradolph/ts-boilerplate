@@ -4,8 +4,14 @@
         "packages/*"
     ],
     "scripts": {
-        "compile": "tsc --build --force tsconfig.json",
-        "common:build": "yarn workspace @islandrush/common build",
-        "common:build:watch": "yarn workspace @islandrush/common build:watch"
+        "dev:server": "yarn workspace @islandrush/server dev",
+        "clean": "rm -rf dist packages/server/dist packages/common/dist packages/server/tsconfig.tsbuildinfo packages/common/tsconfig.tsbuildinfo",
+        "compile": "yarn clean && tsc --build --force tsconfig.json",
+        "uninstall": "rm -rf node_modules yarn.lock packages/server/node_modules packages/common/node_modules",
+        "createDist": "mv packages/server/dist .",
+        "start": "node ./dist/index.js"
+    },
+    "devDependencies": {
+        "concurrently": "^5.3.0"
     }
 }
