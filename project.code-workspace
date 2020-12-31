@@ -12,5 +12,18 @@
 			"name": "Common",
 			"path": "packages\\common"
 		}
-	]
+	],
+	"launch": {
+		"configurations": [
+		],
+		"compounds": [
+			{
+				"name": "Dev",
+				"configurations": [
+					"Server",
+					"Web"
+				]
+			}
+		]
+	}
 }
