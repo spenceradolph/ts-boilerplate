@@ -7,4 +7,4 @@ export const commonFunction = ({ a, b }: CommonType) => {
     return a + b;
 };
 
-export const CONSTANT_VALUE = 9;
+export const CONSTANT_VALUE = 10;

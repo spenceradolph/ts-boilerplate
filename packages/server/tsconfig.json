@@ -6,7 +6,7 @@
         "rootDir": "./src",
         "moduleResolution": "node",
         "esModuleInterop": true,
-        "skipLibCheck": true,  
+        "skipLibCheck": true,
 
         "strict": true,
         "noImplicitAny": true

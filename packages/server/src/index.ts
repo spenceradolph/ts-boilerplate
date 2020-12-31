@@ -1,14 +1,25 @@
-import { CommonType, commonFunction, CONSTANT_VALUE } from '@monorepo/common';
+import { CONSTANT_VALUE } from '@monorepo/common';
+import express from 'express';
+import http from 'http';
 
-console.log('running the server');
+const app = express();
+const server = http.createServer(app);
 
-console.log(CONSTANT_VALUE);
+app.use(express.static(`${__dirname}/build`));
 
-const testValue: CommonType = {
-    a: 5,
-    b: 10
-};
+app.get('/', (_req, res) => {
+    if (process.env.NODE_ENV == 'production') {
+        res.sendFile(`${__dirname}/build/index.html`);
+    } else {
+        res.redirect(`http://localhost:3000`); // React
+    }
+});
 
-const returnValue = commonFunction(testValue);
+app.get('/api/value', (_req, res) => {
+    res.json({ value: CONSTANT_VALUE });
+});
 
-console.log(returnValue);
+const port = process.env.PORT || '80';
+server.listen(port, () => {
+    console.log(`Listening on port ${port}`);
+});

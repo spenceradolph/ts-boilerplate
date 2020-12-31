@@ -31,7 +31,7 @@
             "command": "echo ${input:terminate}",
             "type": "shell",
             "problemMatcher": []
-          }
+        }
     ],
     "inputs": [
         {
@@ -39,6 +39,6 @@
             "type": "command",
             "command": "workbench.action.tasks.terminate",
             "args": "terminateAll"
-          }
+        }
     ]
 }
