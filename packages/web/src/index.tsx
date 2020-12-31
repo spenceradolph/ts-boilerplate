@@ -1,9 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { CommonType } from '@islandrush/common';
+
+const someTest: CommonType = {
+    a: 2,
+    b: 4
+};
 
 ReactDOM.render(
     <React.StrictMode>
-        <h1>Testing</h1>
+        <h1>Testing {someTest.a}</h1>
     </React.StrictMode>,
     document.getElementById('root')
 );
