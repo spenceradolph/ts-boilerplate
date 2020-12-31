@@ -5,9 +5,10 @@
     ],
     "scripts": {
         "dev:server": "yarn workspace @islandrush/server dev",
-        "clean": "rm -rf dist packages/server/dist packages/common/dist packages/server/tsconfig.tsbuildinfo packages/common/tsconfig.tsbuildinfo",
+        "dev:web": "yarn workspace @islandrush/web start",
+        "clean": "rm -rf packages/web/build packages/server/dist packages/common/dist packages/server/tsconfig.tsbuildinfo packages/common/tsconfig.tsbuildinfo",
         "compile": "yarn clean && tsc --build --force tsconfig.json",
-        "uninstall": "rm -rf node_modules yarn.lock packages/server/node_modules packages/common/node_modules",
+        "uninstall": "rm -rf node_modules yarn.lock packages/server/node_modules packages/common/node_modules packages/web/node_modules",
         "createDist": "mv packages/server/dist .",
         "start": "node ./dist/index.js"
     },

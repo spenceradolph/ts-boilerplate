@@ -1,6 +1,10 @@
 {
 	"folders": [
         {
+            "name": "Web",
+            "path": "packages\\web"
+        },
+        {
 			"name": "Server",
 			"path": "packages\\server"
 		},
