@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { CommonType } from '@islandrush/common';
+import { CommonType } from '@monorepo/common';
 
 const someTest: CommonType = {
     a: 2,

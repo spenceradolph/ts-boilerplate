@@ -1,4 +1,4 @@
-import { CommonType, commonFunction, CONSTANT_VALUE } from '@islandrush/common';
+import { CommonType, commonFunction, CONSTANT_VALUE } from '@monorepo/common';
 
 console.log('running the server');
 

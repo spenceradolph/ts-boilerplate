@@ -5,11 +5,11 @@
     ],
     "scripts": {
         "dev": "concurrently \"yarn dev:server\" \"yarn dev:web\"",
-        "dev:web": "yarn workspace @islandrush/web start",
-        "dev:server": "yarn workspace @islandrush/server dev",
+        "dev:web": "yarn workspace @monorepo/web start",
+        "dev:server": "yarn workspace @monorepo/server dev",
         "build": "yarn build:web && yarn build:server && mv packages/server/dist . && mv packages/web/build ./dist",
-        "build:web": "yarn workspace @islandrush/web build",
-        "build:server": "yarn workspace @islandrush/server build",
+        "build:web": "yarn workspace @monorepo/web build",
+        "build:server": "yarn workspace @monorepo/server build",
         "start": "node ./dist/index.js",
         "clean": "rm -rf dist packages/web/build packages/web/.eslintcache packages/server/dist packages/common/dist packages/server/tsconfig.tsbuildinfo packages/common/tsconfig.tsbuildinfo",
         "uninstall": "rm -rf node_modules yarn.lock packages/server/node_modules packages/common/node_modules packages/web/node_modules"

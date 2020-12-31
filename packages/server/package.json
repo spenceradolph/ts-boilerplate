@@ -1,5 +1,5 @@
 {
-    "name": "@islandrush/server",
+    "name": "@monorepo/server",
     "private": true,
     "version": "1.0.0",
     "scripts": {
@@ -12,6 +12,6 @@
         "typescript": "^4.1.3"
     },
     "dependencies": {
-        "@islandrush/common": "1.0.0"
+        "@monorepo/common": "1.0.0"
     }
 }

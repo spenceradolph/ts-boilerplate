@@ -1,9 +1,9 @@
 {
-    "name": "@islandrush/web",
+    "name": "@monorepo/web",
     "version": "1.0.0",
     "private": true,
     "dependencies": {
-        "@islandrush/common": "1.0.0",
+        "@monorepo/common": "1.0.0",
         "@types/node": "^12.0.0",
         "@types/react": "^16.9.53",
         "@types/react-dom": "^16.9.8",
