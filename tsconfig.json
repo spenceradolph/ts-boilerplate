@@ -1,0 +1,12 @@
+{
+    "references": [
+        {
+            "path": "./packages/server"
+        },
+        {
+            "path": "./packages/common"
+        }
+    ],
+    "files": [],
+    "exclude": ["**/node_modules"]
+}

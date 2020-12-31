@@ -1,0 +1,11 @@
+{
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "compile": "tsc --build --force tsconfig.json",
+        "common:build": "yarn workspace @islandrush/common build",
+        "common:build:watch": "yarn workspace @islandrush/common build:watch"
+    }
+}
