@@ -4,10 +4,11 @@
         "module": "commonjs",
         "outDir": "./dist",
         "rootDir": "./src",
-        "composite": true,
         "moduleResolution": "node",
         "esModuleInterop": true,
         "skipLibCheck": true,
+
+        "composite": true,
 
         "strict": true,
         "noImplicitAny": true

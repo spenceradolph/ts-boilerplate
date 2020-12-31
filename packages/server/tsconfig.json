@@ -4,14 +4,18 @@
         "module": "commonjs",
         "outDir": "./dist",
         "rootDir": "./src",
-        "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true,
         "moduleResolution": "node",
         "esModuleInterop": true,
+        "skipLibCheck": true,  
 
         "strict": true,
         "noImplicitAny": true
     },
     "include": ["./src"],
-    "exclude": ["**/node_modules"]
+    "exclude": ["**/node_modules"],
+    "references": [
+        {
+            "path": "../common"
+        }
+    ]
 }
