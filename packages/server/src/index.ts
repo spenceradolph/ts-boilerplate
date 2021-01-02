@@ -9,14 +9,10 @@ app.use(express.static(`${__dirname}/build`));
 
 app.get('/', (_req, res) => {
     if (process.env.NODE_ENV == 'production') {
-        res.sendFile(`${__dirname}/build/index.html`);
+        res.sendFile(`${__dirname}/build/web.html`);
     } else {
         res.redirect(`http://localhost:3000`); // React
     }
-});
-
-app.get('/api/value', (_req, res) => {
-    res.json({ value: CONSTANT_VALUE });
 });
 
 const port = process.env.PORT || '80';
